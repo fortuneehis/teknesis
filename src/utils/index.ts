@@ -1,0 +1,5 @@
+export {default as parallaxScroll} from "./parallaxScroll"
+export {default as smoothScroll} from "./smoothScroll"
+export {default as gsap} from "./customGsap"
+export {default as slideScroll} from "./slideScroll"
+export {lenis} from "./smoothScroll"
