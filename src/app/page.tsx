@@ -26,7 +26,7 @@ export default function Home() {
       <Header />
       <Hero />
       <ServicesSection />
-      <Projects />
+      <Projects showTitle limit={3} />
       <Faqs />
       <Footer />
     </main>

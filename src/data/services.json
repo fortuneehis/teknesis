@@ -1,18 +1,30 @@
 [
-    {
-      "name": "Logo Design",
-      "media": "1.mp4"
-    }, 
-    {
-      "name": "Web Design",
-      "media": "2.mp4"
-    },
-    {
-      "name": "Brand Strategy",
-      "media": "1.mp4"
-    },
-    {
-      "name": "3D Design",
-      "media": "1.mp4"
+  {
+    "name": "Logo Design",
+    "media": {
+      "type": "image",
+      "src": "/social.png"
     }
-  ]
+  },
+  {
+    "name": "Web Design",
+    "media": {
+      "type": "video",
+      "src": "1.mp4"
+    }
+  },
+  {
+    "name": "Brand Strategy",
+    "media": {
+      "type": "image",
+      "src": "/branding.png"
+    }
+  },
+  {
+    "name": "3D Design",
+    "media": {
+      "type": "video",
+      "src": "1.mp4"
+    }
+  }
+]

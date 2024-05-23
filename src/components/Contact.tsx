@@ -1,6 +1,7 @@
 import { useLayoutEffect, useRef } from "react";
 import { gsap } from "../utils";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function Contact() {
   const ref = useRef<HTMLAnchorElement | null>(null);
@@ -19,8 +20,8 @@ export default function Contact() {
   }, []);
 
   return (
-    <a
-      href="mailto:teknesisbrand101@gmail.com"
+    <Link
+      href="/contact"
       className="border-none block relative text-[1.9rem] md:text-[2.3rem] overflow-hidden text-white bg-[#1b1b1b] py-4 rounded-full font-bold"
     >
       <span
@@ -29,6 +30,6 @@ export default function Contact() {
       >
         Let&apos;s talk
       </span>
-    </a>
+    </Link>
   );
 }

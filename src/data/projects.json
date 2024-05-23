@@ -1,27 +1,39 @@
 [
   {
     "name": "potion",
+    "category": "logo",
+    "slug": "potion",
     "tags": ["Web Design", "3D Design", "Branding"]
   },
   {
     "name": "moneywave",
+    "category": "web",
+    "slug": "moneywave",
     "tags": ["Web Design", "3D Design", "Branding"]
   },
   {
     "name": "sendmoney",
+    "category": "app",
+    "slug": "sendmoney",
     "tags": ["App Design"]
   },
 
   {
     "name": "flipaclip",
+    "category": "brand",
+    "slug": "flipaclip",
     "tags": ["Desktop App"]
   },
   {
     "name": "techwave",
+    "category": "brand",
+    "slug": "techwave",
     "tags": ["Web Design", "3D Design", "Branding"]
   },
   {
     "name": "songify",
+    "category": "web",
+    "slug": "songify",
     "tags": ["Web Design", "3D Design", "Branding"]
   }
 ]

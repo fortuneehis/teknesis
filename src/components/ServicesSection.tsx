@@ -2,6 +2,7 @@ import { useLayoutEffect, useRef, useState } from "react";
 import TextAnimation from "./TextAnimation";
 import { gsap, slideScroll } from "../utils";
 import { services } from "../data";
+import Image from "next/image";
 
 function ServicesSection() {
   const elementRef = useRef<HTMLDivElement | null>(null);
@@ -55,12 +56,24 @@ function ServicesSection() {
                 index % 2 !== 0 || "md:px-[5vw]"
               } items-center whitespace-nowrap md:items-baseline min-h-[10rem] md:border-none border-t-2 border-[#fff] border-opacity-[0.03] text-white text-[4.4rem] md:shrink-0 flex md:text-[30rem]`}
             >
-              <div className="w-[40rem] hidden leading-none md:inline-block mr-[5vw] align-middle h-[20rem] object-cover rounded-full overflow-hidden">
-                <video
-                  loop
-                  className="w-full h-full object-left-top object-cover"
-                  src={service.media}
-                ></video>
+              <div className="w-[40rem] relative hidden leading-none md:inline-block mr-[5vw] align-middle h-[20rem] object-cover rounded-full overflow-hidden">
+                {service.media.type === "video" && (
+                  <video
+                    loop
+                    autoPlay
+                    className="w-full h-full object-left-top object-cover"
+                    src={service.media.src}
+                  ></video>
+                )}
+
+                {service.media.type === "image" && (
+                  <Image
+                    className="w-full h-full object-left-top object-cover"
+                    fill
+                    alt={service.name}
+                    src={service.media.src}
+                  />
+                )}
               </div>
               <p className="leading-none [letter-spacing:-.05em] inline-block">
                 {service.name}

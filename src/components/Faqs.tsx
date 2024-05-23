@@ -1,24 +1,6 @@
 import { useState } from "react";
 import Faq from "./Faq";
-
-const faqs = [
-  {
-    question: "What is my name?",
-    answer: "",
-  },
-  {
-    question: "What is my name?",
-    answer: "",
-  },
-  {
-    question: "What is my name?",
-    answer: "",
-  },
-  {
-    question: "What is my name?",
-    answer: "",
-  },
-];
+import { faqs } from "../data";
 
 export default function Faqs() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -37,10 +19,7 @@ export default function Faqs() {
               key={index}
               index={index}
               question={question}
-              answer={`Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis ea
-        soluta numquam minima beatae sed id deserunt incidunt deleniti inventore
-        commodi ut laboriosam obcaecati repellendus aperiam ratione nam, illo
-        pariatur!`}
+              answer={answer}
               onClick={() => {
                 setActiveIndex(activeIndex === index ? null : index);
               }}

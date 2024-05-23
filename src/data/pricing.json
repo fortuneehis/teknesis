@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "Social Media Design",
+    "image": "/social.png",
+    "content": false,
+    "packages": [
+      {
+        "id": 1,
+        "name": "Basic Design Package",
+        "includes": ["2 Designs per week", "Carousel X 1", "Flyer Design X 1"],
+        "price": "N15,000"
+      },
+      {
+        "id": 2,
+        "name": "Standard Design Package",
+        "includes": [
+          "3 Designs per week",
+          "Carousel X 1",
+          "Flyer Design X 1",
+          "Motion Graphics X 1"
+        ],
+        "price": "N20,000"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Social Media Design",
+    "image": "/social-with.png",
+    "content": true,
+    "packages": [
+      {
+        "id": 1,
+        "name": "Basic Design Package",
+        "includes": ["2 Designs per week", "Carousel X 1", "Flyer Design X 1"],
+        "price": "N15,000"
+      },
+      {
+        "id": 2,
+        "name": "Standard Design Package",
+        "includes": [
+          "3 Designs per week",
+          "Carousel X 1",
+          "Flyer Design X 1",
+          "Motion Graphics X 1"
+        ],
+        "price": "N20,000"
+      }
+    ]
+  }
+]

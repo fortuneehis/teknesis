@@ -5,7 +5,7 @@ export default function Slide() {
     <>
       <section className="text-left min-h-[5rem] bg-white pt-20 md:pt-60 md:text-center">
         <div className="flex flex-col px-8 mb-20 md:items-center">
-          <h1 className="text-[6rem] mb-[1.2rem] text-[#1b1b1b] [font-kerning:none]  md:text-[13rem] max-w-[120rem] leading-none">
+          <h1 className="text-[6rem] mb-[1.2rem] text-[#1b1b1b] [font-kerning:none]  md:text-[14rem] max-w-[120rem] leading-none">
             Building <span className="font-bold text-[#001219]">ideas</span> and{" "}
             <span className="font-bold text-[#001219]">digital products</span>
           </h1>
@@ -20,10 +20,10 @@ export default function Slide() {
             <ParallaxSection>
               <video
                 src="1.mp4"
-                autoPlay
                 muted
+                autoPlay
                 loop
-                className="w-full align-middle h-full object-left-top object-cover"
+                className="w-full bg-white align-middle h-full object-left-top object-cover"
               ></video>
             </ParallaxSection>
           </div>

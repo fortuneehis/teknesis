@@ -1,13 +1,15 @@
 import { MouseEventHandler, useLayoutEffect, useRef, useState } from "react";
 import { gsap } from "../utils";
+import Link from "next/link";
 
 type Props = {
   name: string;
   index: number;
+  slug: string;
   tags: string[];
 };
 
-export default function Project({ name, index, tags }: Props) {
+export default function Project({ name, index, tags, slug }: Props) {
   const elementRef = useRef<HTMLDivElement | null>(null);
   const [mouseData, setMouseData] = useState({
     x: 0,
@@ -97,15 +99,16 @@ export default function Project({ name, index, tags }: Props) {
   };
 
   return (
-    <div
+    <Link
+      href={`/projects/${slug}`}
       onMouseEnter={onMouseEnter}
       onMouseMove={onMouseMove}
       onMouseLeave={onMouseLeave}
-      className="border-t-2 flex flex-col justify-between items-start cursor-pointer relative border-[#6e6e6e] border-opacity-15"
+      className="border-t-2 flex flex-col justify-between items-start  relative border-[#6e6e6e] border-opacity-15"
     >
       <div
         ref={elementRef}
-        className="absolute z-10 p-[30px] rounded-full bg-[#1b1b1b] overflow-hidden pointer-events-none hidden md:block opacity-0 scale-0 top-0 left-0 w-[100px] h-[100px]"
+        className="absolute z-10 p-[30px] pointer-events-none rounded-full bg-[#1b1b1b] overflow-hidden hidden md:block opacity-0 scale-0 top-0 left-0 w-[100px] h-[100px]"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -134,6 +137,6 @@ export default function Project({ name, index, tags }: Props) {
           </p>
         ))}
       </div>
-    </div>
+    </Link>
   );
 }

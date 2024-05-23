@@ -6,7 +6,9 @@ const darkerGrotesque = Darker_Grotesque({
   subsets: ["latin", "latin-ext"],
   variable: "--font-grotesque",
   // display: "swap",
-  // adjustFontFallback: true,
+  // preload: true,
+  fallback: ["serif"],
+  adjustFontFallback: true,
 });
 
 export const metadata: Metadata = {
