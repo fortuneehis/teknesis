@@ -23,9 +23,10 @@ export default function ProjectsPage() {
         <ul className="flex py-20">
           {Array.from(
             new Set(["all", ...projects.map(({ category }) => category)])
-          ).map((category) => {
+          ).map((category, index) => {
             return (
               <li
+                key={index}
                 onClick={() => setSelectedCategory(category)}
                 className={`text-[2.5rem] py-6 px-10 rounded-full ${
                   selectedCategory === category
@@ -46,7 +47,13 @@ export default function ProjectsPage() {
           )
           .map(({ name, tags, slug }, index) => {
             return (
-              <Project slug={slug} index={index} name={name} tags={tags} />
+              <Project
+                key={index}
+                slug={slug}
+                index={index}
+                name={name}
+                tags={tags}
+              />
             );
           })}
       </section>

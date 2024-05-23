@@ -33,7 +33,7 @@ export default function Pacakge({ category, name, includes, price }: Props) {
           href="https://docs.google.com/forms/d/e/1FAIpQLSd0XwvaTpAp1Tv9P1_1G0iW21jDgaYHMZpi7nd28OYtnBvJxg/viewform"
           className="border rounded-full leading-none border-[#1b1b1b] text-[2rem] p-10 py-3"
         >
-          Let's talk
+          Let&apos;s talk
         </a>
       </div>
     </div>

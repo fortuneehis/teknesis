@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { projectsExtended } from "@/teknesis/data";
 
-export default function () {
+export default function ProjectPage() {
   const { slug } = useParams();
 
   const router = useRouter();
