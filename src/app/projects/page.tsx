@@ -20,7 +20,7 @@ export default function ProjectsPage() {
     <>
       <Header />
       <section className="px-12">
-        <ul className="flex py-20">
+        <ul className="flex py-20 w-full overflow-scroll">
           {Array.from(
             new Set(["all", ...projects.map(({ category }) => category)])
           ).map((category, index) => {
